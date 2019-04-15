@@ -23,14 +23,22 @@ $f3 -> set('DEBUG', 3);
 //Define a default route
 $f3->route('GET /', FUNCTION()
 {
-    echo "Food.";
-//    $view = new Template();
-//    echo $view-> render('views/home.html');
+    $view = new Template();
+    echo $view-> render('views/home.html');
 });
 
 $f3->route('GET /breakfast', FUNCTION()
 {
-    echo "<h1>Breakfast Page</h1>";
+    // display breakfast view
+    $view = new Template();
+    echo $view-> render('views/breakfast.html');
+});
+
+$f3->route('GET /lunch', FUNCTION()
+{
+    // display lunch view
+    $view = new Template();
+    echo $view-> render('views/lunch.html');
 });
 
 //run Fat-free
