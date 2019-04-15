@@ -34,6 +34,13 @@ $f3->route('GET /breakfast', FUNCTION()
     echo $view-> render('views/breakfast.html');
 });
 
+$f3->route('GET /breakfast/continental', FUNCTION()
+{
+    // display breakfast view
+    $view = new Template();
+    echo $view-> render('views/bfast-cont.html');
+});
+
 $f3->route('GET /lunch', FUNCTION()
 {
     // display lunch view
