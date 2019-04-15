@@ -28,5 +28,10 @@ $f3->route('GET /', FUNCTION()
 //    echo $view-> render('views/home.html');
 });
 
+$f3->route('GET /breakfast', FUNCTION()
+{
+    echo "<h1>Breakfast Page</h1>";
+});
+
 //run Fat-free
 $f3 -> run();
